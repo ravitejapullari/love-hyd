@@ -1,0 +1,349 @@
+{
+    "red-line": {
+        "stations": [
+            {
+                "station":"Miyapur",
+                "lats":"17.496529",
+                "lngs":"78.373191"
+            },
+            {
+                "station":"JNTU College",
+                "lats":"17.498643",
+                "lngs":"78.388862"
+            },
+            {
+                "station":"KPHB Colony",
+                "lats":"17.493786",
+                "lngs":"78.401749"
+            },
+            {
+                "station":"Kukatpally",
+                "lats":"17.485046",
+                "lngs":"78.411675"
+            },
+            {
+                "station":"Balanagar",
+                "lats":"17.476793",
+                "lngs":"78.421994"
+            },
+            {
+                "station":"Moosapet",
+                "lats":"17.472012",
+                "lngs":"78.425985"
+            },
+            {
+                "station":"Bharatnagar",
+                "lats":"17.463973",
+                "lngs":"78.430079"
+            },
+            {
+                "station":"Erragadda Road",
+                "lats":"17.457151",
+                "lngs":"78.433524"
+            },
+            {
+                "station":"ESI Hospital",
+                "lats":"17.447326",
+                "lngs":"78.438370"
+            },
+            {
+                "station":"S.R. Nagar",
+                "lats":"17.441596",
+                "lngs":"78.441694"
+            },
+            {
+                "station":"Ameerpet",
+                "lats":"17.436237",
+                "lngs":"78.444302"
+            },
+            {
+                "station":"Punjagutta",
+                "lats":"17.428762",
+                "lngs":"78.451021"
+            },
+            {
+                "station":"Erra Manzil",
+                "lats":"17.420599",
+                "lngs":"78.456035"
+            },
+            {
+                "station":"Khairatabad",
+                "lats":"17.411293",
+                "lngs":"78.460874"
+            },
+            {
+                "station":"Lakdi-ka-pul",
+                "lats":"17.403842",
+                "lngs":"78.465083"
+            },
+            {
+                "station":"Assembly",
+                "lats":"17.401864",
+                "lngs":"78.469053"
+            },
+            {
+                "station":"Nampally",
+                "lats":"17.393865",
+                "lngs":"78.470300"
+            },
+            {
+                "station":"Gandhi Bhavan (Moazzam Jahi Market)",
+                "lats":"17.386026",
+                "lngs":"78.473130"
+            },
+            {
+                "station":"Medical College (Putli Bowli)",
+                "lats":"17.382403",
+                "lngs":"78.481089"
+            },
+            {
+                "station":"Imlibun (MG Bus Stand)",
+                "lats":"17.379403",
+                "lngs":"78.486388"
+            },
+            {
+                "station":"Malakapet (Nalgonda 'X' Road)",
+                "lats":"17.377211",
+                "lngs":"78.493830"
+            },
+            {
+                "station":"New Market (Super Bazaar)",
+                "lats":"17.373424",
+                "lngs":"78.503146"
+            },
+            {
+                "station":"Musarambagh (TV Tower)",
+                "lats":"17.371116",
+                "lngs":"78.511909"
+            },
+            {
+                "station":"Dilsukh Nagar",
+                "lats":"17.368547",
+                "lngs":"78.525723"
+            },
+            {
+                "station":"Chaitanyapuri (Fruit Market)",
+                "lats":"17.368339",
+                "lngs":"78.535792"
+            },
+            {
+                "station":"Victoria Memorial (Kothapet)",
+                "lats":"17.361826",
+                "lngs":"78.543917"
+            },
+            {
+                "station":"L.B. Nagar (Bahadurguda)",
+                "lats":"17.349805",
+                "lngs":"78.547943"
+            }
+        ]
+    },
+    "green-line": {
+        "stations": [
+            {
+                "station":"Nagole",
+                "lats":"17.390842",
+                "lngs":"78.558847"
+            },
+            {
+                "station":"Uppal",
+                "lats":"17.400041",
+                "lngs":"78.560210"
+            },
+            {
+                "station":"Survey Of India",
+                "lats":"17.407396",
+                "lngs":"78.554261"
+            },
+            {
+                "station":"NGRI",
+                "lats":"17.414789",
+                "lngs":"78.546350"
+            },
+            {
+                "station":"Habsiguda",
+                "lats":"17.420135",
+                "lngs":"78.540586"
+            },
+            {
+                "station":"Tarnaka",
+                "lats":"17.428259",
+                "lngs":"78.528533"
+            },
+            {
+                "station":"Mettuguda",
+                "lats":"17.435465",
+                "lngs":"78.519680"
+            },
+            {
+                "station":"Secunderabad",
+                "lats":"17.435900",
+                "lngs":"78.505392"
+            },
+            {
+                "station":"Parade Ground",
+                "lats":"17.443198",
+                "lngs":"78.497429"
+            },
+            {
+                "station":"Paradise",
+                "lats":"17.443461",
+                "lngs":"78.486177"
+            },
+            {
+                "station":"Rasoolpura",
+                "lats":"17.443607",
+                "lngs":"78.476292"
+            },
+            {
+                "station":"Prakash Nagar",
+                "lats":"17.444873",
+                "lngs":"78.465808"
+            },
+            {
+                "station":"Begumpet",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Ameerpet",
+                "lats":"17.436237",
+                "lngs":"78.444302"
+            },
+            {
+                "station":"Madhura Nagar",
+                "lats":"17.436880",
+                "lngs":"78.439046"
+            },
+            {
+                "station":"Yousufguda",
+                "lats":"17.435063",
+                "lngs":"78.427353"
+            },
+            {
+                "station":"Jubilee Hills Road No 5",
+                "lats":"17.429686",
+                "lngs":"78.424542"
+            },
+            {
+                "station":"Jubilee Hills Checkpost",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Peddamma gudi",
+                "lats":"17.430521",
+                "lngs":"78.408587"
+            },
+            {
+                "station":"Madhapur PS",
+                "lats":"17.437210",
+                "lngs":"78.400528"
+            },
+            {
+                "station":"Durgam Cheruvu",
+                "lats":"17.442796",
+                "lngs":"78.387681"
+            },
+            {
+                "station":"HITEC City",
+                "lats":"17.448885",
+                "lngs":"78.383285"
+            },
+            {
+                "station":"Cyber Gateway",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Shilparamam",
+                "lats":"17.452518",
+                "lngs":"78.378887"
+            }
+        ]
+    },
+    "blue-line": {
+        "stations": [
+            {
+                "station":"Jubilee Bus Station",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Parade Grounds",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Secunderabad R.S.",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Gandhi Hospital",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Musheerabad",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"R.T.C. Cross Roads",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Chikkadpally",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Narayanguda",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Sultan Bazaar",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"M.G. Bus Station",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Salarjung Museum",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Charminar",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Shalibanda",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Shamsherganj",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Jangammet",
+                "lats":"",
+                "lngs":""
+            },
+            {
+                "station":"Falaknuma",
+                "lats":"",
+                "lngs":""
+            }
+        ]
+    }
+}

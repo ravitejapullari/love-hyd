@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hyderabad Metro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootstrap-themes.github.io/dashboard/assets/css/toolkit-inverse.css">
+    <link rel="stylesheet" href="app/assets/css/site.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="../node_modules/core-js/client/shim.min.js"></script>
+    <script src="../node_modules/zone.js/dist/zone.js"></script>
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app/main.js').catch(function(err) {
+            console.error(err);
+        });
+    </script>
+</head>
+
+<body style="width: 1275px;height: 257px;">
+    <div class="modal fade" id="exampleModalLive" [hidden]="!usershand">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hyd-metro class="usersetting">Loading Metro ...</hyd-metro>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/tether/dist/js/tether.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel();
+            
+            $('#myModal').on('shown.bs.modal', function () {
+              $('#myInput').focus()
+            });
+        });
+    </script>
+</body>
+
+</html>

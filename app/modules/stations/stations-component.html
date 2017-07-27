@@ -1,0 +1,118 @@
+<!-- Map Container -->
+<div class="map-container">
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDoubleClickZoom]="false" [streetViewControl]="false" [styles]="silver">
+        <agm-polyline *ngFor="let n of keyObjects" [strokeColor]=mainObject[n].color [strokeWeight]=5 >
+             <agm-polyline-point *ngFor="let m of mainObject[n].stations;" [latitude]=m.lats [longitude]=m.lngs>
+             </agm-polyline-point>
+            <agm-marker [hidden]="!markers" *ngFor="let m of mainObject[n].stations;let i=index;" [latitude]=m.lats [longitude]=m.lngs (markerClick)="clickedMarker(m.station, i)">
+               <agm-info-window>
+                  <strong>{{m.station}}</strong>
+                </agm-info-window>
+            </agm-marker>
+         </agm-polyline>
+        <agm-data-layer [geoJson]="geoJsonObject" (layerClick)="clicked($event)" [style]="styleFunc">
+        </agm-data-layer>
+    </agm-map>
+</div>
+
+<!-- Cards layer -->
+<div class="card maps" style="width: 20rem;left:10px;" [hidden]="!routeSel">
+    <div class="card-block" style="padding-bottom:0;">
+        <button type="button" (click)="hideCard();" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="card-title">Route <i class="material-icons">directions</i></h3> 
+    </div> 
+      <div class="card-block" >
+        <div style="height:425px;overflow:scroll;" > 
+          <ul class="list-group" style="">
+              <li class="list-group-item justify-content-between" *ngFor="let n of routeSelected;let i = index" style="text-overflow: ellipsis">
+                  <span>{{n.station}}</span><br>
+                  <i class="material-icons" [style.color]="drawRoute.color">directions_railway</i> 
+              </li>
+            </ul>
+        </div>  
+      </div>   
+</div>
+
+<!-- Cards layer -->
+<div class="card maps" style="width: 20rem;" [hidden]="!mapCard">
+    <div class="card-header" style="padding-bottom:0;">
+        <button type="button" (click)="hideCard('stations')" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <ul class="nav nav-pills card-header-pills">
+          <li class="nav-item">
+            <button class="card-title btn btn-primary" (click)="showCard('METRO');">METRO</button>
+          </li>
+          <li class="nav-item">
+            <button class="card-title btn btn-primary" (click)="showCard('MMTS');">MMTS</button>
+          </li>
+        </ul>
+    </div>
+    <!-- div class="card-block" style="padding-bottom:0;">
+        <h3 class="card-title">{{selectedLine}}</h3> 
+    </div -->
+      <div class="card text-center" [hidden]="stationsCard">
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item" *ngFor="let m of lineKeys" (click)="showSingleLine(m);">
+                <a class="nav-link" href="javascript:void(0)" [style.color]="m.color">{{m}}</a>
+              </li>
+            </ul>
+          </div> 
+        </div>  
+      <div class="card-block" [hidden]="!showStations">
+        <h4>Stations</h4>
+        <div style="height:425px;overflow:scroll;" > 
+          <ul class="list-group" style="">
+              <li class="list-group-item justify-content-between" *ngFor="let n of stationsObject;let i = index" (click)="showStation(n, i);" style="text-overflow: ellipsis">
+                  <span>{{n.station}} </span>
+                  <i class="material-icons" [style.color]="trainColor">directions_railway</i>
+              </li>
+            </ul>
+        </div>  
+      </div>
+      <div class="card-block" [hidden]="!showStations">
+        <a href="javascript:void(0)" (click)="fetchRoute();" class="card-link">Draw Route</a>
+        <a href="javascript:void(0)" (click)="showCard(selectedLine);" class="card-link">Clear Route</a>  
+        <a href="javascript:void(0)" (click)="getStationsdata();" class="card-link">Cancel</a>
+      </div>    
+</div>
+
+<!-- Maps nav section -->
+<div class="map-nav brp righthanded">    
+  <nav class="map-nav">
+    <div class="bru">
+      <ul class="nav qq brs aaj">
+        <!--li class="qp">
+          <a class="qn" (click)="showCard('METRO');">
+            <i class="material-icons" style="color:red">directions_subway</i>
+          </a>
+        </li>
+        <li class="qp">
+          <a class="qn" (click)="showCard('MMTS');">
+            <span class="bv bnv"></span>
+            <small class="brt axz">History</small>
+          </a>
+        </li-->
+        <li class="qp">
+          <a class="qn" (click)="showStationsCard();">
+            <i class="material-icons" style="color:red">directions_subway</i>
+          </a>
+        </li>
+        <li class="qp">
+          <a class="qn" (click)="getLocationStations();">
+            <i class="material-icons" style="color:red">my_location</i>
+          </a>
+        </li>
+        <li class="qp">
+          <a class="qn" data-toggle="modal" data-target="#exampleModalLive">
+            <i class="material-icons" style="color:red">web_asset</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  
