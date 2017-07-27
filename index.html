@@ -8,14 +8,14 @@
     <base href="/love-hyd/">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://bootstrap-themes.github.io/dashboard/assets/css/toolkit-inverse.css">
     <link rel="stylesheet" href="app/assets/css/site.css">
 
     <!-- Polyfill(s) for older browsers -->
-    <script src="shim.min.js"></script>
-    <script src="zone.js"></script>
-    <script src="system.src.js"></script>
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>
     <script>
         System.import('app/main.js').catch(function(err) {
@@ -45,9 +45,9 @@
       </div>
     </div>
     <hyd-metro class="usersetting">Loading Metro ...</hyd-metro>
-    <script src="jquery.min.js"></script>
-    <script src="tether.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/tether/dist/js/tether.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
             $('.carousel').carousel();
